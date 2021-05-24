@@ -8,6 +8,8 @@ env:
   BOARDCONFIG: N53AP  # Can be obtained with iTunes, 3utools or TSSSaver's app
   DEVICEID: iPhone6,2 # Can be obtained with iTunes, 3utools or TSSSaver's app
   
+  ECID2: 901797983682606
+  
 jobs: 
   build: 
     runs-on: ubuntu-latest
