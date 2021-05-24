@@ -7,8 +7,7 @@ env:
   ECID: 59973168996   # Write in decimal format
   BOARDCONFIG: N53AP  # Can be obtained with iTunes, 3utools or TSSSaver's app
   DEVICEID: iPhone6,2 # Can be obtained with iTunes, 3utools or TSSSaver's app
-  
-  ECID2: 901797983682606
+  APNONCE: 3a88b7c3802f2f0510abc432104a15ebd8bd7154 # Can be grabbed from last section of pre-existing blob, or a jailbroken device in recovery mode and libimobiledevice
   
 jobs: 
   build: 
@@ -19,4 +18,4 @@ jobs:
       - 
         name: Requesting from TSSSaver
         run: |
-            curl -X POST -d '{"ecid": "'"$ECID"'", "boardConfig": "'"$BOARDCONFIG"'", "deviceIdentifier": "'"$DEVICEID"'"}' -v -i 'https://tsssaver.1conan.com/v2/api/save.php'
+            curl -X POST -d '{"ecid": "'"$ECID"'", "boardConfig": "'"$BOARDCONFIG"'", "deviceIdentifier": "'"$DEVICEID"'", "apnonce": "'"$APNONCE"'"}' -v -i 'https://tsssaver.1conan.com/v2/api/save.php'
