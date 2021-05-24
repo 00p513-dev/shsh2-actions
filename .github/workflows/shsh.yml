@@ -7,7 +7,7 @@ env:
   ECID: 59973168996   # Write in decimal format
   BOARDCONFIG: N53AP  # Can be obtained with iTunes, 3utools or TSSSaver's app
   DEVICEID: iPhone6,2 # Can be obtained with iTunes, 3utools or TSSSaver's app
-  APNONCE: 3a88b7c3802f2f0510abc432104a15ebd8bd7154 # Can be grabbed from last section of pre-existing blob, or a jailbroken device in recovery mode and libimobiledevice
+  APNONCE: 3a88b7c3802f2f0510abc432104a15ebd8bd7154 # Can be grabbed from last section of pre-existing blob, or a jailbroken device in recovery mode and libimobiledevice. See commit 693e37b for some known nonces for A11 and below
   
 jobs: 
   build: 
