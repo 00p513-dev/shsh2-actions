@@ -2,6 +2,7 @@ name: Saving blobs
  
 on:
  push:
+  branches: [ a ]
  
  schedule:
   - cron: '0 0,12 * * *
